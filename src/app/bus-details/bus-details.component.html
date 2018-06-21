@@ -1,0 +1,9 @@
+<form>
+  <input type = "text"  placeholder = "From" [(ngModel)]="From">
+  <br/>
+  <input type = "text"  placeholder = "To" [(ngModel)]="To">
+  <br/>
+  <input type="date" class="form-control" name="loginPass" id="loginPass" placeholder="Date" [(ngModel)]= "DateSearch"  required>
+  
+  <input type = "button" (click)='onSearch()' value = "Search">
+</form>

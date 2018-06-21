@@ -1,0 +1,15 @@
+
+  <h2>Bus booking</h2>
+  <div *ngFor="let searchdata of BusSearchList">
+    <h3>{{searchdata.BusName}}</h3>
+    <br>
+    <span>{{searchdata.From}}</span> ==> <span>{{searchdata.To}}</span>
+    <div *ngFor="let seats of SeatsList">
+      <input type="checkbox" ng-model="SeatSelect" >
+    </div>
+    <div>
+        <span>{{TotalPay}}</span>
+      <input type="button" value="Book" (Book)="Book">
+    </div>
+  </div>
+  </div>
